@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <title>Mon formulaire</title>
+        
+    </head>
+    <body>
+     <h1>Formulaires</h1> 
+      <h2>Questionnaire de mobilité humaine</h2>  
+        <p>Le service des transports d’une municipalité envisage de remanier l’offre de transports en commun.<br>
+            A cette fin, une enquête est menée auprès des usagers à l’aide du formulaire ci-dessous</p>  
+    </body>
+<form action="https://html-reponse.usertest.fr/reponse.php"   method="post">
+    <fieldset>
+        <legend style="color:aqua;background-color:aliceblue;">Informations personnelles</legend>
+            <label for="Genre">Genre:</label>
+            <input type="radio" id="M" name="M" value="M">
+            <label>M</label>
+            <input type="radio" id="F" name=F" value="F">
+            <label>F</label><br>
+                <label for="classe d'age">classe d'age:</label>
+                <select name="age" id=classe d'age">
+                <option value="moins de 20ans" name="m20" >moins de 20ans</option>
+                <option value="20ans à 39ans" name="2039">20ans à 39ans</option>
+                <option value="40ans à 59ans" name="4059">40ans à 59ans</option>
+                </select><br>
+                <label>Groupe socioprofessionnel:</label>
+                <select name="groupe socioprofessionnel" id="groupe socioprofessionnel>
+        <option value="Artisans" name="arti">Artisans</option>
+        <option value="ouvriers" name="ouvr">ouvriers</option>
+        <option value="Employés" name="empl">Employés</option>
+                        <select><br>
+         <label>code postal</Label>
+            <input type="text" id="49000" name="cpostal">
+
+</fieldset><br>
+
+   
+                     
+                     <fieldset>
+            <legend style="color:aliceblue;background-color: black;">Informations sur les trajets domicile-travail</legend>
+            <label> vehicule principale pour les trajets domicile travail:</label>
+            <select id="vehicule principale pour les trajet domicile travail">
+                <option value="automobile" name="auto">automobile</option>
+                <option value="Bicyclette" name="vélo">Bicyclette</option>
+                <option value="aucun" name="piéton">piéton</option>
+            </select><br>
+            <label>distance domicile-travail :</label>
+            <select id="distance domicile-travail" name="distance domicile-travail">
+                <option value="inférieur à 1km>inférieur à 1km</option>
+                <option value="1km" name="m1">1km</option>
+                <option value="1km à 5km" name="15">1km à 5km</option>
+            </select>
+                </fieldset><br>
+    <fieldset>
+        
+            <legend style="color:aquamarine;background-color:azure;">axe d'amélioration des transports en commun</legend>
+            <p>cocher les principaux obstacles à la mobilités en transport en communs (plusieurs réponses possibles) </p>
+        <input type="checkbox" id="temps de trajet trop longs" name="temps de trajet trop long">
+        <label>temps de trajet trop longs</label>
+        <input type="checkbox" id="respect des horaires" name="respect des horaires">
+        <label>respect des horaires</label>
+        <input type="checkbox" id="tarifs trop élevés" name="tarifs trop élevés">
+        <label>tarifs trop élevés</label><br>
+        <input type="checkbox" id="respect des horaires" name="respect de horaires">
+        <label>respect des horaires</label>
+        <input type="checkbox" id="trop forte affluence" name="trop forte affluence">
+        <label>trop forte affluence</label>
+        <input type="checkbox" id="desserte insuffisante" name="desserte insuffisante">
+        <label>desserte insuffisante</label><br>
+        <input type="checkbox" id="amplitude horaire trop limitée" name="amplitude horaire trop limitée">
+        <label>amplitude horaire trop limitée</label>
+        <input type="checkbox" id="confort insuffisant" name="confort insuffissant">
+        <label>confort insuffissant</label><br>
+        <p>Remarques ou observations sur le réseau de transports en commun</p>
+        <input type="texterea" id="commentaire" name="commentaire" cols="70" rows="70">
+
+     </fieldset><br>
+     <fieldset>
+        <legend>Merci de votre participation!</legend>
+        <button type="submit">soumettre</button>
+        <button type="submit">réinstaliser</button>
+     </fieldset>
+</form>
